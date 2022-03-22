@@ -1,0 +1,45 @@
+<div class="container">
+  <table class="table">
+    <thead>
+        <tr>
+            <th colspan="2">Parent</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+              <app-voter [questionAposer]="question" (sAnswer)="Answer($event)" ></app-voter>
+            </td>
+  
+           
+  
+        </tr>
+       
+  
+    </tbody>
+  </table>
+
+  <table class="table">
+    <thead>
+        <tr>
+            <th colspan="2">Enfant</th>
+        </tr>
+    </thead>
+    <tbody>
+         
+        <tr> 
+          <td>
+            <div id="lastVote">
+              {{theAnswer}}
+            </div>
+          </td>
+          
+        </tr>
+  
+    </tbody>
+  </table>
+</div>
+
+
+
+
